@@ -6,7 +6,7 @@ import { routes } from "../App";
 import {
   fetchAttemptsAPI,
   fetchCompletedQuizAPI,
-} from "../store/thunks/resultTHunk";
+} from "../store/thunks/resultThunk";
 import useResultState from "../hooks/useResultState";
 
 const ResultScreen = () => {
