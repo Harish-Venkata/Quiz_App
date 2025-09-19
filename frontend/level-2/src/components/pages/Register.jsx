@@ -14,13 +14,14 @@ const Register = () => {
   const navigate = useNavigate();
   const { isAuthenticated, email } = useAuthState();
 
-  useEffect(() => {
-    if (email) {
-      navigate(routes.login);
-    } else if (isAuthenticated) {
-      navigate(routes.protectedRoutes.welcome);
-    }
-  }, [isAuthenticated, navigate]);
+  // useEffect(() => {
+  //   if (email) {
+  //     navigate(routes.login);
+  //     // localStorage.setItem("email",email)
+  //   } else if (isAuthenticated) {
+  //     navigate(routes.protectedRoutes.welcome);
+  //   }
+  // }, [isAuthenticated, navigate]);
 
   // Yup validation schema
   const validationSchema = useMemo(() => {
